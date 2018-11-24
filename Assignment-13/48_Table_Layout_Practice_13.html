@@ -1,0 +1,258 @@
+<!-- ----------------------------------------------------------------------
+Assignment No :17
+Program       :Create the given example using (a) Table layout (b) Using clear and float properties.
+Date          :27-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Table Layout</title>
+    <style type="text/css">
+     body
+     {
+         border:2px solid black;
+         height: 600px;
+     }
+    thead
+    {
+        border-bottom: 1px solid black;
+        /* border-width: 100px; */
+        line-height: 100px;
+        padding: 5px;
+        background-color: cornflowerblue;
+    }
+    tfoot td
+    {
+        width:100%;
+        background-color: cornflowerblue;
+    }
+    table
+    {
+        width: 100%;
+        border-collapse: collapse;
+    }
+    ul li
+    {
+        display: inline;
+        font-size: 1.2em;
+        padding: 5px;
+        margin-left: 25px;
+        margin-right: 25px; 
+        text-align: center;
+        border: 2px solid black;
+        background-color: aqua;
+    }
+    .fr
+    {
+        float: right;
+        margin-right: 20px;
+        font-size: 1.2em;
+        margin-top: 1px;
+         padding: 5px; 
+        background-color: aqua;
+        color: #B5222D;
+        clear: left;
+        
+    }
+    ul li:hover
+    {
+        color: red;
+    }
+    p:nth-child(1) a
+   {
+       width:100px;
+       height: 40px;
+       line-height: 53px;
+       border-bottom:4px solid #636393; 
+       padding-left: 5px;
+       color: #333;
+       text-decoration:none; 
+       list-style-type: none;
+       display: block; 
+       -webkit-transition: .2s all linear;
+       -moz-transition: .2s all linear;
+       -o-transition: .2s all linear;
+       transition: .2s all linear;
+    }
+    p a:hover
+    {
+        border-bottom:35px solid #636393; 
+        height: 5px;
+    }
+ p:nth-child(2) a
+   {
+       width:100px;
+       height: 40px;
+       line-height: 53px;
+       border-bottom:4px solid #B5222D; 
+       padding-left: 5px;
+       color: #333;
+       text-decoration: none;
+       display: block; 
+       -webkit-transition: .2s all linear;
+       -moz-transition: .2s all linear;
+       -o-transition: .2s all linear;
+       transition: .2s all linear;
+    }
+    p:nth-child(2) a:hover
+    {
+        border-bottom:35px solid #B5222D; 
+        height: 5px;
+    }
+    p:nth-child(3) a
+   {
+       width:100px;
+       height: 40px;
+       line-height: 53px;
+       border-bottom:4px solid #D4953C; 
+       padding-left: 5px;
+       color: #333;
+       text-decoration: none;
+       display: block; 
+       -webkit-transition: .2s all linear;
+       -moz-transition: .2s all linear;
+       -o-transition: .2s all linear;
+       transition: .2s all linear;
+    }
+    p:nth-child(3) a:hover
+    {
+        border-bottom:35px solid #D4953C; 
+        height: 5px;
+    }
+    p:nth-child(4) a
+   {
+       width:100px;
+       height: 40px;
+       line-height: 53px;
+       border-bottom:4px solid #609491; 
+       padding-left: 5px;
+       color: #333;
+       text-decoration: none;
+       display: block; 
+       -webkit-transition: .2s all linear;
+       -moz-transition: .2s all linear;
+       -o-transition: .2s all linear;
+       transition: .2s all linear;
+    }
+    p:nth-child(4) a:hover
+    {
+        border-bottom:35px solid #609491; 
+        height: 5px;
+    }
+    p:nth-child(5) a
+   {
+       width:100px;
+       height: 40px;
+       line-height: 53px;
+       border-bottom:4px solid #87A248; 
+       padding-left: 5px;
+       color: #333;
+       text-decoration: none;
+       display: block; 
+       -webkit-transition: .2s all linear;
+       -moz-transition: .2s all linear;
+       -o-transition: .2s all linear;
+       transition: .2s all linear;
+    }
+    p:nth-child(5) a:hover
+    {
+        border-bottom:35px solid #87A248; 
+        height: 5px;
+    }
+    .blink {
+  animation-duration: 1000ms;    /*blinking speed decreases and increase */
+  animation-name: tgle;
+  animation-iteration-count: infinite;
+}
+
+@keyframes tgle {
+  0% {
+    opacity: 0;
+  }
+
+  49.99% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 1;
+  }
+
+  99.99% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+    </style>    
+</head>
+<body>
+    <table border=1>
+        <thead>
+                <tr >
+                        <td colspan="4" style="font-size:3em;text-align: center ">
+                            <marquee direction="left" width="42%"  behavior="alternate" scrollamount="4">
+                       WebStack Academy (P) Ltd
+                    </marquee></td>
+                </tr>
+        </thead>    
+        <tbody>
+            <tr style="background-color: brown">
+                <td colspan="4">
+                    <ul style="list-style-type:none;" >
+                        <li>Home</li>
+                        <li>About Us</li>
+                        <li>Gallary</li>
+                        <li>Team</li>
+                        <li >Contact Us</li>
+                        <p class="fr blink">Info@webstackacademy.in</p>
+                    </ul>   
+                </td>
+            </tr>
+            <tr>
+                <td style="height:300px;width:15%;background-color: silver;" colspan="2">
+                        <p><a href="#">Courses</a></p>
+                         <p><a href="#">Activity</a></p>
+                         <p><a href="#">Placement</a></p>
+                         <p><a href="#">Workshop</a></p>
+                         <p><a href="#">Culture</a></p>
+                     </td>
+                <td style="background-color:rgb(120,120,120)">
+                    <h1 style="text-align: center;">Popular Career based Courses in Web Application Development</h1>
+                  <div style="float:left">  <img src="node.png" height="100px" width="100px"></div>
+                  <div>
+                    <p style="float: right">Careers in Web and Mobile technologies is the most sought after item in Technology industry globally. It is topping all the charts in terms of opportunities as well as salaries. The median salary in USA for a FullStack web developer is USD 126000. Our MEAN Stack training institute offers various web development training programs with 100% guaranteed placement opportunity. 
+                        Take a look into our web development courses that we have for you.</p></div>
+                </td>
+                <td style="width:15%;background-color: silver">
+
+                <marquee direction="up" width="100%" height="250px" behavior="" scrollamount="5"><h4>Full stack Developer</h4>
+                <h4>FrontEnd Developer</h4>
+                <h4>Mobile Apps Developer</h4>
+                <h4>FullStack Developer</h4>
+                <h4>UI/UX Developer</h4>
+                </marquee>
+
+                </td>
+
+            </tr>   
+        </tbody>   
+        
+        <tfoot>
+                <tr>
+                    <td colspan="4" style="height:100px"><details>  
+                            <summary>Copyright 2011-2014.</summary>  
+                            <p> - by WebStack Academy. All Rights Reserved.</p>  
+                            <p>All content and graphics on this web site are the property of the javatpoint.com</p>  
+                            </details>  
+                    </td>
+                </tr>
+        </tfoot> 
+    </table>
+</body>
+</html>

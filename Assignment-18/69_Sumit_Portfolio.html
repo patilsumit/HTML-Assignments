@@ -1,0 +1,93 @@
+<!-- ----------------------------------------------------------------------
+Assignment No :18
+Program       :Create Your personnel website with these features
+               Homepage – navigation bar, Brief about yourself along with picture
+               Contact Page
+               Photo gallery – display images with caption in matrix form
+               Resume Page (education details in a table)
+               Hobby page with Links to pages of interest to you etc.
+Date          :04-09-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">    
+    <style type="text/css">
+     .header
+     {
+        
+       background:url(apple-black-and-white-black-and-white-169573.jpg)repeat;
+       height: 100px;
+     }
+     h1
+     {
+        float:left;
+        padding: 10px;
+        color: aqua;
+        font-size: 2em;
+        display: block;
+        background-color:gray;  
+        margin-left:10px;
+        opacity:0.6; 
+     }
+     ul
+     {
+         list-style-type: none;
+         display: inline-block;
+         padding: 0;
+         margin: 0;
+         width: 100%;
+         overflow: hidden;
+         background-color: #333;
+     }
+     li
+     {
+         float: left;
+         border-right: 1px solid #bbb;
+     }
+     li a
+     {
+         display: block;
+         color:white;
+         text-decoration: none;
+         padding: 14px 16px;
+         text-align: center;
+     }
+     li a:hover
+     {
+         background-color: #111;
+     }
+   
+    </style>
+      
+</head>
+<body>
+    <div class="header">
+      <h1>sumitpatil.co.in</h1>
+      
+      <img src="instagram-icon.jpg" style="height:50px;float: right;margin-top: 40px">
+      <img src="twiter.svg" style="height:50px;float: right;margin-top: 45px">
+      <img src="fb1.png" style="height:50px;float: right;margin-top: 40px">
+
+    </div>
+    <div class="menu">
+        <ul>
+            <li><a href="70_Home_Page.html" target="dataframe">Home</a></li>
+            <li><a href="71_Contact_Us_Page.html" target="dataframe">Contact Us</a></li>
+            <li><a href="72_Photo_Gallery.html" target="dataframe">Gallery</a></li>
+            <li><a href="73_Portfoli_Page.html" target="dataframe">Portfolio</a></li>
+            <li><a href="74_Hobby_Page.html" target="dataframe">Hobby</a></li>
+        </ul>    
+    </div>
+    <iframe src="70_Home_Page.html" name="dataframe" width="100%" height="1150px">
+               
+     </iframe>   
+    
+</body>  
+</html>

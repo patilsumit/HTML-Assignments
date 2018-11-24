@@ -1,0 +1,68 @@
+<!-- ----------------------------------------------------------------------
+Assignment No :4
+Program       :Create a navigation bar and add links to five different pages of five different websites that should open in a new window.
+Date          :23-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Navigation Bar</title>
+    <style>
+        ul{
+            /* background-color: black; */
+            list-style-type:none;
+            height: 50px;
+            line-height: 50px;
+            background-color: blueviolet;
+            
+        }
+        ul li 
+        {
+            display: inline;
+            color: white;
+            font-size: 1.2em;
+            padding: 5px;
+            margin-left: 25px;
+            margin-right: 25px; 
+            text-align: center;
+            border: 2px solid black;
+            
+        }
+        ul li:hover
+        {
+           color: red;
+           margin-left: 25px;
+           height: 5px;
+           padding: 5px;
+          
+           line-height: 20px;
+           -webkit-transition:.2s all linear;
+           -moz-transition: .2s all linear;
+           -o-transition: .2s all linear;
+           transition: .2s all linear;
+        }
+        ul a
+        {
+            text-decoration: none;            
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Sumit Infotech</h1><hr>
+    <p>This Infotech Is Product based It Solution.</p>
+     <ul>
+        <a href="01_Simple_Html_Program.html"><li>Home</li></a>
+        <a href="33_Heading_Horizontal_6.html"> <li>About Us</li></a>
+        <a href="23_Figure_FigureCaption_Practice.html"><li>Gallary</li></a>
+        <a href="19_Heading_Sub_Sup_Different_Style_2.html"> <li>Team</li></a>
+        <a href="32_Trailer_And_Audio_10.html"><li>Contact Us</li></a>
+        <a href="" style="float: right;border: none;"><li >contact@sumitpatil.co.in</li></a>
+   </ul>
+</body>
+</html>

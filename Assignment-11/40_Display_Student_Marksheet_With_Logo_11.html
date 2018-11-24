@@ -1,0 +1,193 @@
+<!-- ----------------------------------------------------------------------
+Assignment No :11
+Program       :Display student marks sheet with school logo.
+Date          :24-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Student Marksheet</title>
+   <style type="text/css">
+       body
+       {
+           width:1250px;
+           margin-left: 45px; 
+           background-color: silver;
+           
+       }
+       table
+       {
+           border-collapse: collapse;
+       }
+       td
+       {
+           text-align: center;
+           padding: 10px;
+       }
+       thead
+       {
+           background-color: aqua
+       }
+       tfoot
+       {
+           background-color: aqua;
+       }
+       tbody tr:nth-child(even)
+       {
+           background-color: blanchedalmond;
+       }
+   </style>
+</head>
+<body><center><div style="border: 5px solid black;">
+    <marquee direction="right" width="50%" behavior="alternate" scrollamount="2"><h1>Gujarat Technological University(GTU)</h1></marquee>
+    <h3>AICTE Affilated</h3>
+    <h4><u>Examination 2018</u></h4>
+        <table>
+             
+            <tr>
+                <td>Roll No:</td>
+                <td>151103107019</td>
+            </tr>
+            <tr>
+                    <td>Name of Candidate:</td>
+                    <td>Patil Sumit S</td>
+                </tr>
+                <tr>
+                        <td>Name Of Father:</td>
+                        <td>Patil Suresh S</td>
+                </tr>  
+                <tr>
+                        <td>Collage Center:</td>
+                        <td>GIDC Degree Engineering Collage</td>
+                    </tr>
+        </table><br>
+     <table border="3" cellspacing="50" cellpadding="5" >
+         <thead>
+         <tr>
+         <th rowspan="2">Name Of Subject</th>
+         <th colspan="6">Mark Obtain Theory</th>
+         <th colspan="5">Mark Obtain Practical</th>
+         <th  rowspan="2">Total Theory & Practical</th>
+         </tr>
+        
+         
+         <tr>
+             <td>Max</td>
+             <td>Min</td>
+             <td>I</td>
+             <td>II</td>
+             <td>III</td>
+             <td>Total</td>
+             <td>Max</td>
+             <td>Min</td>
+             <td>I</td>
+             <td>II</td>
+             <td>Total</td>
+         </tr>
+        </thead>
+        <tbody>
+         <tr>
+             <td>Computer Program</td>
+             <td>70</td>
+             <td>25</td>
+             <td>21</td>
+             <td>20</td>
+             <td></td>
+             <td>41</td>
+             <td>30</td>
+             <td>11</td>
+             <td>27</td>
+             <td>-</td>
+             <td>27</td>
+             <td>68</td>
+        </tr>
+         <tr>
+             <td>Mobile Design</td>
+             <td>100</td>
+             <td>35</td>
+             <td>23</td>
+             <td>26</td>
+             <td></td>
+             <td>49</td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td>-</td>
+             <td></td>  
+             <td>49</td>
+         </tr>
+         <tr>
+                <td>Server Program</td>
+                <td>100</td>
+             <td>35</td>
+             <td>20</td>
+             <td>24</td>
+             <td></td>
+             <td>44</td>
+             <td></td>
+             <td></td>
+             <td></td>
+             <td>-</td>
+             <td></td>
+             <td>44</td>
+        </tr>
+        <tr>
+            <td>Network Management</td>
+            <td>70</td>
+             <td>25</td>
+             <td>23</td>
+             <td>20</td>
+             <td></td>
+             <td>45</td>
+             <td>30</td>
+             <td>11</td>
+             <td>26</td>
+             <td>-</td>
+             <td>26</td>
+             <td>69</td>
+        </tr>
+        </tbody>
+        <tfoot>
+        <tr>
+                <td colspan="3" rowspan="2"> Result:Pass</td>
+                <td colspan="9">Total of Part-1 Year(140/400)</td>
+                <td>230</td>
+                   
+        </tr>
+        <tr>
+                <td colspan="9" >Grand Total(140/400)</td>
+                <td>230</td>
+                
+        </tr>
+        </tfoot>
+     </table><br><br>
+     <table border="3" cellpadding="5">
+            <colgroup>
+                <col style="background-color: red;">
+                <col style="background-color: red;">
+                <col style="background-color: pink;">
+              </colgroup>
+         <tr>
+             <th>Qualifiying Subject</th>
+             <th>Marks</th>
+             <th>Result</th>
+         </tr>
+         <tr>
+             <td>Comupter Manaitance</td>
+             <td>25</td>
+             <td>Clear</td>
+         </tr>
+         <tr>
+             <td>Unix Design</td>
+             <td></td>
+             <td>Not Clear</td>
+         </tr>
+     </table>
+     </div>
+</body>
+</html>

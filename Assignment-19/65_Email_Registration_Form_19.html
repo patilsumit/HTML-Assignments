@@ -1,0 +1,94 @@
+<!-- ----------------------------------------------------------------------
+Assignment No :19
+Program       :Create an Email Registration form with Name, Permanent address, mailing address, phone number, date of birth, email id, “username display name” and password. 
+               Add appropriate validation using auto-complete, placeholder, Email attribute.
+Date          :30-08-2018
+Auther        :Sumit Patil
+Institute     :WebStack Academy (P) Ltd.
+------------------------------------------------------------------------ -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Registration Form</title>
+    <style type="text/css">
+    table
+    {
+    border-collapse:collapse; 
+    }
+    
+    </style>
+    
+
+</head>
+<body>
+        <center>
+    <h1>Registration Form</h1>
+          <form  name="RegForm">      
+          <table border="0" cellspacing="5" cellpadding="5">
+              
+              <tr>
+                    <td>User Name:</td>
+                    <td><input type="text"  size="40" id="txtuname" placeholder="User Name" minlength="8"></td>
+              </tr>
+              <tr>
+                <td>Permanent Address:</td>
+                <td><textarea cols="39" rows="5"></textarea></td>
+             </tr>
+             <tr>
+                <td>Malling Address:</td>
+                <td><textarea cols="39" rows="5"></textarea></td>
+             </tr>
+              <tr>
+                    <td>Email:</td>
+                    <td><input type="text" id="txtemail" size="40" placeholder="Email"></td>
+              </tr>
+              <tr>
+                    <td>Password:</td>
+                    <td><input type="password"  size="40" id="txtpwd" placeholder="Pass Word" minlength="6" maxlength="20" pattern="(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}" 
+                        title="Must contain at least one number and one uppercase and lowercase letter, and at least 8 or more characters" ></td>
+              </tr>
+              <tr>
+                    <td>Conform Password:</td>
+                    <td><input type="password"  size="40" name="txtcpwd" placeholder="Conform Pass Word" required></td>
+               
+                </tr>
+              <tr>
+                    <td>BirthDate:</td>
+                    <td><input type="date" id="txtdate"  placeholder="Birth Date"></td>
+              </tr>
+              <tr>
+                    <td>Gender:</td>
+                    <td>
+                   Male <input type="radio"  name="rdpt">
+                   Female<input type="radio"  name="rdpt">
+                   Other<input type="radio"  name="rdpt">
+                    </td>
+              </tr> 
+              <tr>
+                  <td>Mobile Number:</td>
+                  <td>
+                      <input type="text" name="txtmobile" size="40" maxlength="10" placeholder="Mobile">
+                  </td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                    <input type="checkbox" id="chktc" name="chktc" value="Agree" title="please Accept Terms and Condition">Accept All the Terms and Condition
+                    </td>
+                </tr>
+                <tr style="text-align:center ">
+                    <td colspan="2"><input type="submit" id="btnsubmit"  value="submit">
+                        <input type="reset" id="btnreset" value="reset">
+                    </td>
+                </tr>
+          </table>   
+          </form>
+
+</body>
+</html>
+
+
+
+    
